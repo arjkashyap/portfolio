@@ -3,7 +3,10 @@
  */
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://www.yourdomain.tld`,
+    title: "Arjun Kashyap",
+    siteUrl: `https://www.arjunkashyap.xyz`,
+    description:
+      "Software Engineer, Content Creator and a really great Overthinker",
   },
-  plugins: [],
-}
+  plugins: ["gatsby-plugin-image", "gatsby-plugin-sharp"],
+};
