@@ -1,0 +1,19 @@
+# Huffman Compression
+
+### A small web application for losseless text compression
+
+## About
+
+In 1952, David A. Huffman published a paper called "A Method for the Construction of Minimum-Redundancy Codes". In this He deviced a method for finding or using optimal prefix code that can be used in data compression.
+The output from Huffman's algorithm can be viewed as a variable-length code table for encoding a source symbol (such as a character in a file).
+
+<br />
+The algorithm derives this table from the estimated probability or frequency of occurrence
+(weight) for each possible value of the source symbol. The optimality of this compression
+algorithm is in direct relation with the size of the subject.
+
+In my observations, the said algorithm performed better when the size of the text document(which were my subject for testing) was greater than atleast 30Kb. The compression algorithm associates a dictonary to decompress the files that can take some storage as well.
+
+<br />
+
+This web application uses the Huffman compression techniques to compress text documents.
