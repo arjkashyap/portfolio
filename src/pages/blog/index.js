@@ -13,11 +13,8 @@ const BlogPage = ({ data }) => {
               {node.frontmatter.title}
             </Link>
           </h2>
-          <p style={{ fontSize: "12px", fontStyle: "italic" }}>
-            Posted: {node.frontmatter.date}
-          </p>
-          <p> {node.excerpt} </p>
-          <br />
+          <p>Posted: {node.frontmatter.date}</p>
+          <p>{node.excerpt}</p>
         </article>
       ))}
     </Layout>
@@ -29,10 +26,9 @@ export const query = graphql`
     allMdx(sort: { frontmatter: { date: DESC } }) {
       nodes {
         frontmatter {
-          date(formatString: "DD MMM YYYY")
+          date(formatString: "MMMM D, YYYY")
           title
           slug
-          description
         }
         id
         excerpt
