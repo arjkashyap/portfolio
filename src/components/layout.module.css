@@ -4,6 +4,10 @@
   font-family: sans-serif;
 }
 
+.dateClass {
+  font-size: x-small;
+}
+
 .site-title {
   font-size: 3rem;
   color: gray;
