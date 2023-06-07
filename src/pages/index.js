@@ -18,7 +18,7 @@ const IndexPage = () => {
 
   return (
     <Layout pageTitle="Home Page">
-      <p>This portfolio is currently under construction</p>
+      <p>This portfolio is currently under construction...</p>
     </Layout>
   );
 };
