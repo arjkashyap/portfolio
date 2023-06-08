@@ -16,10 +16,8 @@ const Layout = ({ pageTitle, children }) => {
   return (
     <div className={container}>
       <Navbar />
-      <main>
-        <h1 className={heading}>{pageTitle}</h1>
-        {children}
-      </main>
+      <br />
+      <main>{children}</main>
     </div>
   );
 };

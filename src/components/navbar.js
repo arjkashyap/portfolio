@@ -1,13 +1,14 @@
 import * as React from "react";
 import { Link } from "gatsby";
 import {
+  nav,
   navLinks,
   navLinkItem,
   navLinkText,
 } from "../styles/navbar.module.css";
 
 const Navbar = () => (
-  <nav>
+  <nav className={nav}>
     <ul className={navLinks}>
       <li className={navLinkItem}>
         <Link to="/" className={navLinkText}>
