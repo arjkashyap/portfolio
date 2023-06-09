@@ -6,7 +6,25 @@
   font-size: 32px;
 }
 
+.my-img {
+  border-radius: 10px;
+  height: 400px;
+  width: 400px;
+}
+
+.icon-svg-container {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 1rem;
+}
+
 .icon-svg {
   height: 50px;
   width: 50px;
+}
+
+.icon-svg:hover {
+  height: 52px;
+  width: 52px;
 }

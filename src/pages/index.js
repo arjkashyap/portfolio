@@ -2,13 +2,19 @@ import * as React from "react";
 import Layout from "../components/layout";
 import { Link, graphql, useStaticQuery } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
-import { subHeading, iconSvg } from "../styles/index.module.css";
+import {
+  subHeading,
+  iconSvg,
+  iconSvgContainer,
+  myImg,
+} from "../styles/index.module.css";
 import { header } from "../styles/common.module.css";
 import Seo from "../components/seo";
 import { color } from "../theme";
 import TwitterIcon from "../images/twitter.svg";
 import Youtube from "../images/youtube.svg";
 import Linkedin from "../images/linkedin.svg";
+import Github from "../images/github.svg";
 
 // Step 2: Define your component
 const IndexPage = () => {
@@ -51,35 +57,62 @@ const IndexPage = () => {
             labore et amet. In irure fugiat dolore et duis nulla exercitation
             excepteur irure ullamco labore enim.
           </p>
-          <p>
-            Ipsum consequat ut magna Lorem duis deserunt non nulla aliquip
-            cillum cillum velit anim. Ex veniam ad excepteur mollit in sunt ex
-            non.
-          </p>
+          <div style={{ display: "flex" }}>
+            <p>
+              Reach out to me on my{" "}
+              <Link
+                to="https://www.linktr.ee/arjkashyap"
+                target="_blank"
+                style={{ color: color.primary }}
+              >
+                socials
+              </Link>
+            </p>
+            <StaticImage
+              src="../images/down-right-arrow.png"
+              alt="down right arrow"
+              style={{ margin: "0.4rem" }}
+            />
+          </div>
         </div>
         <div style={{ flex: 1 }}>
           <StaticImage
             alt="Clifford, a reddish-brown pitbull, posing on a couch and looking stoically at the camera"
             src="../images/MyImg.jpeg"
-            style={{ borderRadius: "10px", width: "400px", height: "400px" }}
+            className={myImg}
           />
         </div>
       </div>
       <div style={{ display: "flex" }}>
-        <div style={{ flex: 1 }}>
-          <Link target="_blank" to="https://twitter.com/the_work_of_art">
-            <TwitterIcon className={iconSvg} />
-          </Link>
+        <div className={iconSvgContainer}>
+          <div>
+            <Link target="_blank" to="https://twitter.com/the_work_of_art">
+              <TwitterIcon className={iconSvg} />
+            </Link>
+          </div>
+          <div>
+            <Link target="_blank" to="https://www.youtube.com/@mixedreality650">
+              <Youtube className={iconSvg} />
+            </Link>
+          </div>
+          <div>
+            <Link target="_blank" to="https://www.linkedin.com/in/arjkashyap/">
+              <Linkedin className={iconSvg} />
+            </Link>
+          </div>
+          <div>
+            <Link target="_blank" to="https://www.github.com/arjkashyap">
+              <Github className={iconSvg} />
+            </Link>
+          </div>
         </div>
         <div style={{ flex: 1 }}>
-          <Link target="_blank" to="https://www.youtube.com/@mixedreality650">
-            <Youtube className={iconSvg} />
-          </Link>
-        </div>
-        <div style={{ flex: 1 }}>
-          <Link target="_blank" to="https://www.linkedin.com/in/arjkashyap/">
-            <Linkedin className={iconSvg} />
-          </Link>
+          <p>
+            Stay updated with personalized content by joining my newsletter! Get
+            access to diverse blogs on technology, career & general insights.
+            Stay updated on YouTube, ensuring you never miss out on exciting new
+            videos.
+          </p>
         </div>
       </div>
     </Layout>

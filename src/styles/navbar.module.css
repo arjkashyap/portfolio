@@ -16,7 +16,7 @@
 }
 
 .nav-link-item:hover {
-  background-color: rgb(241, 249, 253);
+  /* background-color: rgb(241, 249, 253); */
 }
 
 .nav-link-text {
@@ -24,4 +24,10 @@
   text-decoration: none;
   font-family: Montserrat, sans-serif;
   font-weight: 500;
+}
+
+.nav-link-text:hover {
+  color: #3897d3;
+  font-weight: 600;
+  padding: 0.5rem;
 }
