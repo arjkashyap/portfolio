@@ -143,7 +143,7 @@ const IndexPage = () => {
         </div>
         <br />
         <div style={{ display: "flex", marginTop: "1rem" }}>
-          <div style={{ flex: 1, margin: "0.5rem" }}>
+          <div style={{ flex: 1, marginRight: "1rem" }}>
             <h1 style={{ textDecoration: "underline" }} className={header}>
               Professional Experience
             </h1>
@@ -156,7 +156,7 @@ const IndexPage = () => {
             </h6>
             <Expereince />
           </div>
-          <div style={{ flex: 1, margin: "0.5rem" }}>
+          <div style={{ flex: 1, marginLeft: "1rem" }}>
             <h1 style={{ textDecoration: "underline" }} className={header}>
               Personal Projects
             </h1>

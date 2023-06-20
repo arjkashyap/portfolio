@@ -11,3 +11,8 @@ p {
   font-size: medium;
   font-weight: 400;
 }
+
+.icon-svg-small {
+  height: 40px;
+  width: 40px;
+}
