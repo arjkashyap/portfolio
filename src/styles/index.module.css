@@ -28,3 +28,8 @@
   height: 52px;
   width: 52px;
 }
+
+.flex-container {
+  display: "flex";
+  margin-top: "1rem";
+}
