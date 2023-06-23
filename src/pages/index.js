@@ -22,6 +22,7 @@ import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import Expereince from "../components/experience";
 import ProjectList from "../components/projectlist";
+import LatestStories from "../components/lateststories";
 
 // Step 2: Define your component
 const IndexPage = () => {
@@ -172,6 +173,12 @@ const IndexPage = () => {
             </h6>
             <ProjectList />
           </div>
+        </div>
+        <div>
+          <h1 style={{ textDecoration: "underline" }} className={header}>
+            Latest Articles
+          </h1>
+          <LatestStories />
         </div>
       </Layout>
     </ThemeProvider>
