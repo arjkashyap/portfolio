@@ -4,7 +4,7 @@ import { RiBriefcaseLine } from "react-icons/ri";
 import InformaticaIcon from "../images/informatica.svg";
 import KervIcon from "../images/kerv.svg";
 import KeyDisruptors from "../images/keydisruptors.svg";
-import { iconSvgSmall } from "../styles/common.module.css";
+import { iconSvgSmall, hr } from "../styles/common.module.css";
 
 // Example data for experiences
 const experiences = [
@@ -51,11 +51,18 @@ const Expereince = () => {
           <Box display="flex" alignItems="center" marginBottom={1}>
             {/* <RiBriefcaseLine size={20} style={{ marginRight: "0.5rem" }} /> */}
             {experience.icon}
-            <Typography variant="h6"> {experience.company}</Typography>
+            <Typography
+              variant="h6"
+              style={{ fontFamily: "monospace", fontWeight: "bold" }}
+            >
+              {" "}
+              {experience.company}
+            </Typography>
           </Box>
           <Typography variant="subtitle1">{experience.title}</Typography>
           <Typography variant="subtitle2">{experience.duration}</Typography>
           <p>{experience.description}</p>
+          {/* <hr className={hr} /> */}
         </Box>
       ))}
     </Box>

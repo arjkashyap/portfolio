@@ -21,6 +21,7 @@ import Github from "../images/github.svg";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import Expereince from "../components/experience";
+import ProjectList from "../components/projectlist";
 
 // Step 2: Define your component
 const IndexPage = () => {
@@ -169,6 +170,7 @@ const IndexPage = () => {
                 github.com/arjkashyap
               </Link>{" "}
             </h6>
+            <ProjectList />
           </div>
         </div>
       </Layout>

@@ -16,3 +16,36 @@ p {
   height: 40px;
   width: 40px;
 }
+
+/* common.module.css */
+
+/* ...existing styles... */
+
+hr {
+  height: 1px;
+  border: none;
+  background-color: #ccc;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+hr::before {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 30%;
+  height: 1.5px;
+  background-color: #ccc;
+}
+
+hr::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  right: 0;
+  width: 30%;
+  height: 1.5px;
+  background-color: #ccc;
+}
